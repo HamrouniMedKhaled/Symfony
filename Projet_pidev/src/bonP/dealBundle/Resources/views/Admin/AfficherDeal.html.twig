@@ -1,0 +1,60 @@
+{% extends 'default/AdminLayout.html.twig' %}
+{% block title %}
+    {{ parent() }}
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+    <div id="page-wrapper">
+        <div class="main-page">
+            <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home"
+                     aria-labelledby="home-tab">
+
+                    <!-- Product tabs-->
+                    <div class="product-tab">
+                        {% for deal in deals %}
+                            <div class="col-md-4 product-tab-grid simpleCart_shelfItem">
+                                <div class="grid-arr">
+                                    <div class="grid-arrival">
+                                        <figure>
+                                            <a href="{{ path('Afficher_Deal',{'id':deal.id}) }}"
+                                               class="new-gri" data-toggle="modal"
+                                               data-target="#myModal1">
+                                                <div class="grid-img">
+                                                    <img src="{{ asset(deal.image.webpath) }}"
+                                                         class="img-responsive" alt="">
+                                                </div>
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="women">
+                                        <h6>
+                                            <a href="{{ path('Afficher_Deal',{'id':deal.id}) }}">{{ deal.nom }}</a>
+                                        </h6>
+                                        <span class="size">Score : {{ deal.score }}</span>
+                                        <p>
+                                            <em class="item_price">Prix : </em>
+                                            <del> {{ deal.prix }}  </del>
+                                            <em class="item_price">TND {{ deal.prix-(deal.prix*(deal.tred/100)) }} </em>
+                                        </p>
+                                        <a href="{{ path('Admin_Desactiver_Deal',{'id':deal.id}) }}"
+                                           data-text="Add To Cart" class="my-cart-b item_add">Désactiver</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="clearfix"></div>
+                    </div>
+
+
+                    <!-- Product tabs-->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

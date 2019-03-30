@@ -1,0 +1,177 @@
+{% extends 'default/layout.html.twig' %}
+{% block title %}
+    {{ parent() }} Plan
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="products-agileinfo">
+            <h2 class="tittle">{% if reservations is empty %}Vous n'avez aucune reservation <br> {% else %} Liste des Reservations {% endif %} </h2>
+
+            <div class="container">
+
+
+                <div class="product-agileinfo-grids w3l">
+
+                    <!--Barre gauche-->
+                    <div class="container">
+                        <div class="product-agileinfo-grids w3l">
+                            <div class="col-md-3 product-agileinfo-grid">
+
+                                <div class="brand-w3l" style="margin-top:0px;">
+                                    <h3>Catégories</h3>
+                                    <ul>
+                                        <li> <a href="{{ path('Afficher_Deals') }}">Tout les deals</a></li>
+                                        {% if is_granted("ROLE_OWNER") %}
+
+                                            <li><a href="{{ path('Afficher_Mes_Deal') }}">Afficher mes deals</a></li>
+
+
+                                        {% endif %}
+                                        {% for categorie in categories  %}
+                                            <li><a href="{{ path('Recherche_Categorie_Deal',{"categorie": categorie.nom}) }}">{{ categorie.nom }}</a></li>
+                                        {% endfor %}
+                                        <li><a href="{{ path('Recherche_Score_Deal') }}">Afficher par score</a></li>
+
+
+
+
+                                        <li><a href="{{ path('Afficher_Reserver') }}">Afficher mes reservations</a></li>
+                                        <li>Recherche par ville</li>
+
+                                        <form name="form" action="{{ path('Recherche_Ville_Deal') }}" method="post">
+                                            <input type="text" id="ville" name="ville"><br>
+                                            <input type="submit" value="Rechercher" href="" id="">
+                                        </form>
+
+
+
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 product-agileinfon-grid1 w3l">
+
+                            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
+
+                                    <div id="myTabContent" class="tab-content">
+                                        <!--affichage 1 -->
+
+                                        <div class="col-md-9 product-agileinfon-grid1">
+
+                                            <!--Image haut de page-->
+                                            <div class="product-agileinfon-top">
+                                                <div class="col-md-6 product-agileinfon-top-left">
+                                                    <img class="img-responsive " src="images/img3.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-6 product-agileinfon-top-left">
+                                                    <img class="img-responsive " src="images/img4.jpg" alt="">
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <!--Image haut de page-->
+
+                                            <!--Menu ToolBar-->
+                                            <div class="mens-toolbar">
+
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <!--Menu ToolBar-->
+
+
+                                            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                                <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
+
+                                                    <!-- type affichage -->
+                                                    <div class="product-tab">
+                                                        {% for reservation in reservations %}
+                                                            <div class="col-md-4 product-tab-grid simpleCart_shelfItem">
+                                                                <div class="grid-arr">
+                                                                    <div class="grid-arrival">
+                                                                        <figure>
+                                                                            <a href="{{ path('Afficher_Deal',{'id':reservation.deal.id}) }}"
+                                                                               class="new-gri" data-toggle="modal"
+                                                                               data-target="#myModal1">
+                                                                                <div class="grid-img">
+                                                                                    <img src="{{ asset(reservation.deal.image.webpath) }}"
+                                                                                         class="img-responsive" alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </figure>
+                                                                    </div>
+                                                                    <div class="women">
+                                                                        <h6>
+                                                                            <a href="{{ path('Afficher_Deal',{'id':reservation.deal.id}) }}">{{ reservation.deal.nom }}</a>
+                                                                        </h6>
+                                                                        <span class="size">Score : {{ reservation.deal.score }}</span>
+                                                                        <p>
+                                                                            <em class="item_price">Prix : </em>
+                                                                            <del>{{ reservation.deal.prix }}  </del>
+                                                                            <em class="item_price">TND {{ reservation.deal.prix-(reservation.deal.prix*(reservation.deal.tred/100)) }} </em>
+                                                                        </p>
+                                                                        <span class="size">Nombre de place : {{ reservation.nbr }}</span>
+                                                                        {% if not reservation.payer %}
+                                                                        <a href="{{ path('Payer_Deal',{'id':reservation.id}) }}"
+                                                                           data-text="Add To Cart" class="my-cart-b item_add">Payer</a>
+                                                                        {% endif %}
+                                                                        <a href="{{ path('Supprimer_Reserver',{'id':reservation.id}) }}"
+                                                                           data-text="Add To Cart" class="my-cart-b item_add">Annuler</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% endfor %}
+                                                        <div class="clearfix"></div>
+                                                    </div>
+
+                                                    <!-- type affichage-->
+
+                                                    <!-- container Product tab-->
+                                                    <div id="myTabContent" class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane fade in active" id="home"
+                                                             aria-labelledby="home-tab">
+
+                                                            <!-- Product tabs-->
+
+
+                                                            <!-- Product tabs-->
+                                                        </div>
+
+
+                                                    </div>
+                                                </ul>  <!-- container Product tab-->
+                                            </div>
+                                        </div>
+
+                                        <!-- affichage 2 -->
+
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+
+                    <!--Barre gauche-->
+
+                    <!--Contenu-->
+
+                    <!--Contenu-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

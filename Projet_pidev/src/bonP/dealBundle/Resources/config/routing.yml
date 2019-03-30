@@ -1,0 +1,95 @@
+Ajouter_Deal:
+    path:     /Deal/MesDeals/Ajouter/{id}
+    defaults: { _controller: bonPdealBundle:Deal:ajouterdeal }
+Ajouter_Dealm:
+    path:     /Deal/MesDeals/Ajouterm/
+    defaults: { _controller: bonPdealBundle:Deal:ajouterdealm }
+Afficher_Deals:
+    path:     /Deal/Afficher_Deals
+    defaults: { _controller: bonPdealBundle:Deal:afficherdeals }
+Afficher_Dealsm:
+    path:     /Deal/Afficher_Dealsm/
+    defaults: { _controller: bonPdealBundle:Deal:afficherdealsm }
+Afficher_Mes_Deal:
+    path:     /Deal/MesDeals/Afficher
+    defaults: { _controller: bonPdealBundle:Deal:affichermesdeal }
+Afficher_Mes_Dealm:
+    path:     /Deal/MesDeals/Afficherm/
+    defaults: { _controller: bonPdealBundle:Deal:affichermesdealm }
+Afficher_Deal:
+    path:     /Deal/Afficher_Deal/{id}
+    defaults: { _controller: bonPdealBundle:Deal:afficherdeal }
+Afficher_Dealm:
+    path:     /Deal/Afficher_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:afficherdealm }
+Supprimer_Deal:
+    path:     /Deal/MesDeals/Supprimer_Deal/{id}
+    defaults: { _controller: bonPdealBundle:Deal:supprimerdeal }
+Supprimer_Dealm:
+    path:     /Deal/MesDeals/Supprimer_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:supprimerdealm }
+Supprimer_Dealmm:
+    path:     /Deal/MesDeals/Supprimer_Dealmm/
+    defaults: { _controller: bonPdealBundle:Deal:supprimerdealmm }
+Modifier_Deal:
+    path:     /Deal/MesDeals/Modifier_Deal/{id}
+    defaults: { _controller: bonPdealBundle:Deal:modifierdeal }
+Modifier_Dealm:
+    path:     /Deal/MesDeals/Modifier_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:modifierdealm }
+Reserver_Deal:
+    path:     /Deal/Reserver_Deal/{id}
+    defaults: { _controller: bonPdealBundle:ReservationDeal:reserverdeal }
+Reserver_Dealm:
+    path:     /Deal/Reserver_Dealm/
+    defaults: { _controller: bonPdealBundle:ReservationDeal:reserverdealm }
+Afficher_Reserver:
+    path:     /Deal/Afficher_Reserver
+    defaults: { _controller: bonPdealBundle:ReservationDeal:afficherreservation }
+Afficher_Reserverm:
+    path:     /Deal/Afficher_Reserverm/
+    defaults: { _controller: bonPdealBundle:ReservationDeal:afficherreservationm }
+Supprimer_Reserver:
+    path:     /Deal/Supprimer_Reserver/{id}
+    defaults: { _controller: bonPdealBundle:ReservationDeal:suprimerreservation }
+Supprimer_Reserverm:
+    path:     /Deal/Supprimer_Reserverm/
+    defaults: { _controller: bonPdealBundle:ReservationDeal:suprimerreservationm }
+Payer_Deal:
+    path:     /Deal/Payer_Deal/{id}
+    defaults: { _controller: bonPdealBundle:ReservationDeal:payerdeal }
+Payer_Dealm:
+    path:     /Deal/Payer_Dealm/
+    defaults: { _controller: bonPdealBundle:ReservationDeal:payerdealm }
+Recherche_Score_Deal:
+    path:     /Deal/Recherche_Score_Deal
+    defaults: { _controller: bonPdealBundle:Deal:recherchescoredeal }
+Recherche_Score_Dealm:
+    path:     /Deal/Recherche_Score_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:recherchescoredealm }
+Recherche_Categorie_Deal:
+    path:     /Deal/Recherche_Categorie_Deal/{categorie}
+    defaults: { _controller: bonPdealBundle:Deal:recherchecategoriedeal }
+Recherche_Categorie_Dealm:
+    path:     /Deal/Recherche_Categorie_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:recherchecategoriedealm }
+Recherche_Ville_Deal:
+    path:     /Deal/Recherche_Ville_Deal
+    defaults: { _controller: bonPdealBundle:Deal:recherchevilledeal }
+Recherche_Ville_Dealm:
+    path:     /Deal/Recherche_Ville_Dealm/
+    defaults: { _controller: bonPdealBundle:Deal:recherchevilledealm }
+Admin_Afficher_Deal:
+    path:     /Admin/Deal/Afficher/
+    defaults: { _controller: bonPdealBundle:AdminDeal:afficher }
+Admin_Desactiver_Deal:
+    path:     /Admin/Deal/Desactiver/{id}
+    defaults: { _controller: bonPdealBundle:AdminDeal:desavtive }
+Admin_Statistic_Deal:
+    path:     /Admin/Deal/Statistic
+    defaults: { _controller: bonPdealBundle:AdminDeal:statistic }
+Get_Categories:
+    path:     /Deal/Get_Categories/
+    defaults: { _controller: bonPdealBundle:Deal:categorie }
+
+

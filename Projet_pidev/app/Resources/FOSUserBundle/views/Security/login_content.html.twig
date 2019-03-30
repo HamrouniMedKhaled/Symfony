@@ -1,0 +1,58 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <h3>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</h3><br>
+         <h3>         <a href="{{ path('fos_user_security_logout') }}">
+                  {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+</a></h3>
+{% else %}
+
+
+
+{% if error %}
+    <h3>{{ error.messageKey|trans(error.messageData, 'security') }}</h3>
+{% endif %}
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+    {% if csrf_token %}
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+    {% endif %}
+
+    <h3>Connexion</h3>
+
+    <label>Nom d'utilisateur</label>
+    <div class="key">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="required" />
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    <label>Mot de passe</label>
+    <div class="key">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" id="password" name="_password" required="required" />
+        <div class="clearfix"></div>
+    </div>
+
+    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+
+    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+
+
+    <div class="forg">
+        <a href="{{ path('fos_user_resetting_request') }}" class="forg-left">Mot de Passe oublié</a>
+        <a href="{{ path('fos_user_registration_register') }}" class="forg-right">Créer un compte</a>
+        <div class="clearfix"></div>
+    </div>
+</form>
+
+
+{% endif %}

@@ -1,0 +1,52 @@
+{% extends 'default/AdminLayout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+
+
+        <div id="page-wrapper">
+            <div class="main-page">
+                <h3 class="title1">Plans innactifs</h3>
+                <center>
+                    <div class="panel-body widget-shadow">
+                        <br>
+                        <br>
+                        <h4>Plans innactifs</h4>
+                        <br>
+                        <br>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>titre</th>
+                                <th>genre</th>
+                                <th>date</th>
+                                <th>score</th>
+                                <ht>ajoute par</ht>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for plan in plans %}
+                                <tr>
+                                    <td>{{ plan.titre }}</td>
+                                    <td>{{ plan.genre.nom}}</td>
+                                    <td>{{ plan.dateAjout|date }}</td>
+                                    <td>{{ plan.score }}</td>
+                                    <td> ajouté par {{ plan.user.username }}</td>
+                                    <td><a href="{{ path('plan_admin_affichage',{'id':plan.id}) }}">Afficher</a></td>
+
+                                    <td><a href="{{ path('activerdesactiverplan',{'id':plan.id}) }}">Activer</a></td>
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+
+
+
+    </div>
+</div>
+
+{% endblock %}
+

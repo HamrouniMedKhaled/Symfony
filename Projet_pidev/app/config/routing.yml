@@ -1,0 +1,39 @@
+bon_pbadge:
+    resource: "@bonPbadgeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bon_pvalidation:
+    resource: "@bonPvalidationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bon_pdeal:
+    resource: "@bonPdealBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bon_preservation:
+    resource: "@bonPreservationBundle/Resources/config/routing.yml"
+    prefix:   /reservation
+
+bon_penseigne:
+    resource: "@bonPenseigneBundle/Resources/config/routing.yml"
+    prefix:   /
+
+plan:
+    resource: "@planBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bon_puser:
+    resource: "@bonPuserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+# app/config/routing.yml
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+mgilet_notifications:
+    resource: "@MgiletNotificationBundle/Controller/"
+    prefix: /notifications

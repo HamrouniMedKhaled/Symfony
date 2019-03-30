@@ -1,0 +1,111 @@
+{% extends 'default/AdminLayout.html.twig' %}
+{% block title %}
+    {{ parent() }} Plan
+{% endblock %}
+
+
+{% block page %}
+    {{ parent() }}
+    {% endblock %}
+
+{% block content %}
+    <div id="page-wrapper">
+    <div class="main-page">
+        <h3 class="title1">Statistics</h3>
+        <center>
+        <div class="panel-body widget-shadow">
+            <br>
+            <br>
+            <h4>Nombre des deals par ville:</h4>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Villes</th>
+                    <th>Deals</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for nbrdv in nbrdvs %}
+                    <tr>
+                        <td>{{ nbrdv['ville'] }}</td>
+                        <td>{{ nbrdv['nbr'] }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <h4>Nombre des deals par enseigne:</h4>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Enseignes</th>
+                    <th>Deals</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for nbrde in nbrdes %}
+                    <tr>
+                        <td>{{ nbrde['nom'] }}</td>
+                        <td>{{ nbrde['nbr'] }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <h4>Nombre des reservations par deal:</h4>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Deals</th>
+                    <th>Reservations</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for nbrrd in nbrrds %}
+                    <tr>
+                        <td>{{ nbrrd['nom'] }}</td>
+                        <td>{{ nbrrd['nbr'] }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <h4>Nombre des reservations par enseigne:</h4>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Enseignes</th>
+                    <th>Reservations</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for nbrre in nbrres %}
+                    <tr>
+                        <td>{{ nbrre['nom'] }}</td>
+                        <td>{{ nbrre['nbr'] }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </center>
+
+    </div>
+
+    </div>
+{% endblock %}

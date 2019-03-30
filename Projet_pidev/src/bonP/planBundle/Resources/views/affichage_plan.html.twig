@@ -1,0 +1,191 @@
+{% extends 'default/layout.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="content">
+        <!--single-->
+        <div class="single-wl3">
+            <div class="container">
+                <div class="single-grids">
+                    <div class="col-md-4 single-grid">
+                        <div clas="single-top">
+                            <div class="">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li data-thumb="images/si.jpg">
+                                            <div class="thumb-image"> <img src="{{ asset(plan.image.webPath) }}" data-imagezoom="true" class="img-responsive"> </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 product-grid1">
+                        <div class="tab-wl3">
+                            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                <ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Description</a></li>
+                                    <li role="presentation"><a href="#reviews" role="tab" id="reviews-tab" data-toggle="tab" aria-controls="reviews">Commentaires</a></li>
+
+                                </ul>
+                                <div id="myTabContent" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+
+                                        <p class="price item_price"> {{ plan.titre }}</p><br>
+                                        <h4>vu {{ plan.score }} fois</h4><br>
+                                        <h4>signalé {{ plan.reportnumber }} fois</h4><br>
+                                        <h4>ajouté par: {{ plan.user.username }}</h4><br>
+                                        <p>{{ plan.description }}</p>
+
+
+
+
+
+                                    </div>
+
+
+
+                                    <div role="tabpanel" class="tab-pane fade" id="reviews" aria-labelledby="reviews-tab">
+
+
+                                        <div class="reviews-bottom">
+
+                                            <h3><a href="{{ path('signelaer_plan',{"id": plan.id } ) }}">signaler ce plan (le plan sera inspecté par l'administrateur) </a></h3><br>
+
+                                            {% for comment in plan.commentaires %}
+                                                {% if comment.reported==false %}
+                                                    <h4>{{ comment.user }}<h4> <p>  {{ comment.contenu }}  <a href="{{ path('supprimer_commentaire',{"id": comment.id } ) }}">Supprimer</a>|<a href="{{ path('signelaer_commentaire',{"id": comment.id } ) }}">Signaler</a> </p>
+                                                {% endif %}
+                                            {%  endfor %}
+
+                                            {{ form_start(Form, {'method':'post','action': ''}) }}
+                                                <label>Ajouter un commentaire</label>
+                                            {{ form_widget(Form.contenu) }}
+                                            {{ form_widget(Form.envoyer) }}
+                                            {{ form_end(Form) }}
+                                        </div>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="custom" aria-labelledby="custom-tab">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <!--single-->
+
+        <!--new-arrivals-->
+    </div>
+    <div id="map"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+<script>
+
+        function initMap() {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: {lat: {{ plan.lat }} ,
+                         lng: {{ plan.lng }}
+                }
+            });
+
+            var infoWindow = new google.maps.InfoWindow({map: map});
+
+            var marker = new google.maps.Marker({
+                position: {lat: {{ plan.lat }} ,
+                    lng: {{ plan.lng }}
+                },
+                titre: "{{ plan.titre }}"
+
+            });
+
+            marker.setMap(map);
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('vous êtes ici !!');
+                }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+        }
+
+
+
+
+
+</script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG6zbqs3gRbkpNQzc2a_r3KqmCy80nSeI&language=fr&callback=initMap">
+    </script>
+{% endblock %}

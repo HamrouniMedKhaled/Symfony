@@ -1,0 +1,9 @@
+services:
+    badge.manager:
+        class: bonP\badgeBundle\Manager\BadgeManager
+        arguments: ['@Doctrine\Common\Persistence\ObjectManager']
+    tag.form.type.tags:
+        class: bonP\badgeBundle\Form\TagsType
+        arguments: ['@Doctrine\Common\Persistence\ObjectManager']
+        tags:
+          - { name: form.type}

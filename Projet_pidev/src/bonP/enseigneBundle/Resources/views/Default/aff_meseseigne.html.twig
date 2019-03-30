@@ -1,0 +1,136 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <script src="{{ asset('http://code.jquery.com/jquery-1.10.2.min.js')}}"></script>
+    <script src="{{ asset('front/js/jquery.searcher.js')}}"></script>
+    <style>
+
+        .index-content a:hover{
+            color:black;
+            text-decoration:none;
+        }
+        .index-content{
+            margin-bottom:20px;
+            padding:50px 0px;
+
+        }
+        .index-content .row{
+            margin-top:20px;
+        }
+        .index-content a{
+            color: black;
+        }
+        .index-content .card{
+            background-color: #FFFFFF;
+            padding:0;
+            margin-bottom: 10%;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius:4px;
+            box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+
+        }
+        .index-content .card:hover{
+            box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+            color:black;
+        }
+        .index-content .card img{
+            width:100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .index-content .card h4{
+            margin:20px;
+        }
+        .index-content .card p{
+            margin:20px;
+            opacity: 0.65;
+        }
+        .index-content .blue-button{
+            width: 100px;
+            -webkit-transition: background-color 1s , color 1s; /* For Safari 3.1 to 6.0 */
+            transition: background-color 1s , color 1s;
+            min-height: 20px;
+            background-color: #002E5B;
+            color: #ffffff;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: lighter;
+            margin: 0px 20px 15px 20px;
+            padding: 5px 0px;
+            display: inline-block;
+        }
+        .index-content .blue-button:hover{
+            background-color: #dadada;
+            color: #002E5B;
+        }
+        @media (max-width: 768px) {
+
+            .index-content .col-lg-4 {
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+
+Mes enseignes :
+    <input id="cardsearchinput" />
+
+    <div class="index-content">
+        <div class="container">
+            <div id="carddata">
+            {% for enseigne in enseigne %}
+                <div class="card">
+                <a href="{{ path('afficher_enseigne',{'id':enseigne.id}) }}">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="{{ asset(enseigne.image.webPath) }}">
+                            <h4>{{ enseigne.nom }}</h4>
+                            <p>{{ enseigne.description }}.</p>
+                            <a href="{{ path('modifier_enseigne',{'id':enseigne.id}) }}" class="blue-button">Update</a>
+                            <a href="{{ path('supprimer_enseigne',{'id':enseigne.id}) }}" class="blue-button">Delete</a>
+                            <a href="{{ path('Ajouter_Deal',{'id':enseigne.id}) }}" class="blue-button">Deal</a>
+                            <a href="{{ path('_create',{'id':enseigne.id}) }}" class="blue-button">Reservation</a>
+                            <a href="{{ path('ajouter_event',{'id':enseigne.id}) }}" class="blue-button">Evenement</a>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $("#carddata").searcher({
+            itemSelector: ".card",
+            textSelector: "h4",
+            inputSelector: "#cardsearchinput",
+            toggle: function(item, containsText) {
+                // use a typically jQuery effect instead of simply showing/hiding the item element
+                if (containsText)
+                    $(item).fadeIn();
+                else
+                    $(item).fadeOut();
+            }
+        });
+    </script>
+
+
+{% endblock %}
+

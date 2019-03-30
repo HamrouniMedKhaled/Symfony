@@ -1,0 +1,28 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+{% block content %}
+<h1>la liste de vos reservation</h1>
+<div class="container">
+    <center>
+
+        <table id="t" class="table table-responsive table-striped"  style="margin-bottom: 150px">
+            <thead class="thead-dark">
+            <tr style="color: #F5871F"><td>id</td><td>date reservation</td><td>nbre de place </td><td>Action</td></tr>
+            {% for reservation in reservation  %}
+                <tr><td>{{  reservation.id}}</td>
+                    <td>{{  reservation.datereservation | date}}</td>
+                    <td>{{  reservation.nbplaces }}</td>
+                    <td>
+                        <a href="{{ path('_delete',{'id':reservation.id}) }}" >Supprimer</a>
+                        <a href="{{ path('_update',{'id':reservation.id}) }}">Modifier</a>
+                        <a href="{{ path('pdf',{'id':reservation.id}) }}">export Pdf</a>
+
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </center>
+{% endblock %}

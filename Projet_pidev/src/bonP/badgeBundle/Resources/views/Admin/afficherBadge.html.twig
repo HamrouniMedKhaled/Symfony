@@ -1,0 +1,57 @@
+{% extends 'default/AdminLayout.html.twig' %}
+{% block title %}
+    {{ parent() }} Plan
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+    <div id="page-wrapper">
+        <div class="main-page">
+            <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home"
+                     aria-labelledby="home-tab">
+
+                    <!-- Product tabs-->
+                    <div class="product-tab">
+                        {% for badge in badges %}
+                            <div class="col-md-4 product-tab-grid simpleCart_shelfItem">
+                                <div class="grid-arr">
+                                    <div class="grid-arrival">
+                                        <figure>
+                                            <a href="{{ path('admin_afficher_badge') }}"
+                                               class="new-gri" data-toggle="modal"
+                                               data-target="#myModal1">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="women">
+                                        <h6>
+                                            <a href="{{ path('admin_afficher_badge') }}">{{ badge.name }}</a>
+                                        </h6>
+                                        <div class="row">
+                                        <span class="size">Action count : {{ badge.actionCount }}</span>
+                                        </div>
+                                        <div>
+                                            <span class="size">Action name : {{ badge.actionName }}</span>
+                                        </div>
+                                        <div>
+                                            <a href="{{ path('admin_delete_badge',{'id':badge.id}) }}"> Supprimer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="clearfix"></div>
+                    </div>
+
+
+                    <!-- Product tabs-->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

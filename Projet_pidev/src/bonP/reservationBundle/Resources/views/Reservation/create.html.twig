@@ -1,0 +1,38 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+{% block content %}
+
+
+
+
+<center><h1>reservation</h1></center>
+    <fieldset style="width: 50%;">
+        <center><table>
+            {{ form_start(form) }}
+            <tr>
+                <td>date de reservation </td>
+
+
+                <td class="bootstrap-datepicker3.css">{{ form_widget(form.datereservation)}}</td>
+
+            </tr>
+
+            <tr>
+                <td>nombre de place </td>
+                <td>{{ form_widget(form.nbplaces) }}</td>
+            </tr>
+            <tr>
+                <td>{{ form_widget(form.save) }}</td>
+            </tr>
+            <br> <br> <br> <br> <br> <br>
+        </table>
+        </center>
+        <br> <br> <br> <br>
+        {#<p class="alert-danger" style="position: fixed ;bottom: 325px;left: 30px ">        {{ mot }} </p>#}
+        {{ form_end(form) }}
+
+
+    </fieldset>
+{% endblock %}

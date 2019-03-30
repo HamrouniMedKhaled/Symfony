@@ -1,0 +1,150 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    {% endblock %}
+
+
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="content">
+        <!--login-->
+        <div class="login">
+            <div class="main-agileits" style="width: 40% !important;">
+                <div class="form-w3agile form1">
+                    <div class="container">
+                        <div class="col-md-3 single-grid" >
+                            <h3>Ajoutez un nouveau plan</h3>
+                            {{ form_start(form) }}
+                            <label>Nouveau titre</label>
+                            <div class="key">
+
+                                {{ form_widget(form.titre) }}
+                                <div class="clearfix"></div>
+                            </div>
+                            <label>Nouvelle description</label>
+                            {{ form_widget(form.description) }}
+                            <div class="clearfix"></div>
+                            <label>Nouvelle image</label>
+                            {{ form_widget(form.image) }}
+                            <br>
+                            <div class="clearfix"></div>
+
+
+
+
+                            {{ form_end(form) }}
+
+                        </div>
+
+
+                        <div class="col-md-8 single-grid">
+                            <div id="map" >
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+
+
+
+    <script>
+
+        var x=document.getElementById("lat").value;
+        var y=document.getElementById("lng").value;
+        var z=parseFloat(x);
+        var p=parseFloat(y);
+        var myLatlng = {lat: z, lng: p};
+
+
+        function initMap() {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: myLatlng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Emplacement initial du plan , cliquez pour zoomer'
+            });
+
+            google.maps.event.addListener(map, 'click', function(event) {
+
+
+                placeMarker(map, event.latLng);
+
+
+            });
+
+            map.addListener('center_changed', function() {
+                // 3 seconds after the center of the map has changed, pan back to the
+                // marker.
+                window.setTimeout(function() {
+                    map.panTo(marker.getPosition());
+                }, 30000);
+            });
+
+            marker.addListener('click', function() {
+                map.setZoom(18);
+                map.setCenter(marker.getPosition());
+            });
+            function placeMarker(map, location) {
+
+                $("#lat").val(location.lat());
+                $("#lng").val(location.lng());
+
+                marker.setPosition(location);
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG6zbqs3gRbkpNQzc2a_r3KqmCy80nSeI&language=fr&callback=initMap">
+    </script>
+    {% endblock %}

@@ -1,0 +1,106 @@
+ajout_enseigne:
+    path:     /ajoutenseigne
+    defaults: { _controller: bonPenseigneBundle:Enseigne:ajoutenseigne}
+
+afficher_enseigne:
+    path:     /afficher/{id}
+    defaults: { _controller: bonPenseigneBundle:Enseigne:afficherenseigne}
+
+mes_enseigne:
+    path:     /mesenseignes
+    defaults: { _controller: bonPenseigneBundle:Enseigne:mesesenseignes}
+
+supprimer_enseigne:
+    path:     /supprimer{id}
+    defaults: { _controller: bonPenseigneBundle:Enseigne:supprimerenseigne}
+
+modifier_enseigne:
+    path:     /modifier/{id}
+    defaults: { _controller: bonPenseigneBundle:Enseigne:modifierenseigne }
+
+ajouter_event:
+    path:     /ajoutev{id}
+    defaults: { _controller: bonPenseigneBundle:Event:ajoutevent }
+
+afficher_event:
+     path:     /afficheev/{id}
+     defaults: { _controller: bonPenseigneBundle:Event:afficherevent }
+
+afficher_events:
+     path:     /afficheevs
+     defaults: { _controller: bonPenseigneBundle:Event:afficherevents }
+supprimer_event:
+     path:     /sup{id}
+     defaults: { _controller: bonPenseigneBundle:Event:supprimerevent }
+
+modifier_event:
+    path:     /upadte{id}
+    defaults: { _controller: bonPenseigneBundle:Event:updateevent}
+
+ajouter_menu:
+    path:     /ajoutmenu/{id}
+    defaults: { _controller: bonPenseigneBundle:Menu:ajoutmenu }
+
+afficher_menu:
+    path:     /affichermenu/{id}
+    defaults: { _controller: bonPenseigneBundle:Menu:affichermenu }
+
+supprimer_menu:
+     path:     /sup/{id}
+     defaults: { _controller: bonPenseigneBundle:Menu:supprimemenu }
+
+up_menu:
+     path:     /modif{id}
+     defaults: { _controller: bonPenseigneBundle:Menu:updatemenu }
+
+statistique:
+     path:     /statistique
+     defaults: { _controller: bonPenseigneBundle:Stat:index }
+
+admin_enseigne:
+     path:     /showEnseigne
+     defaults: { _controller: bonPenseigneBundle:Enseigne:showEnseigne }
+
+admin_evenement:
+     path:     /showEvents
+     defaults: { _controller: bonPenseigneBundle:Enseigne:showEvenement }
+
+mobile_show_one_menu:
+     path:     /mobile/showonemenu/{id}
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileAffichermenu }
+mobile_show_all_menu:
+     path:     /mobile/showallmenu
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileAfficherAllMenu }
+mobile_show_one_event:
+     path:     /mobile/showoneevent/{id}
+     defaults: { _controller: bonPenseigneBundle:Event:mobileAfficherEvent }
+mobile_show_all_event:
+     path:     /mobile/showallevent
+     defaults: { _controller: bonPenseigneBundle:Event:mobileAfficherAllEvent }
+mobile_show_one_enseigne:
+     path:     /mobile/showoneenseigne/{id}
+     defaults: { _controller: bonPenseigneBundle:Enseigne:mobileAfficherEnseigne }
+mobile_show_all_enseigne:
+     path:     /mobile/showallenseigne
+     defaults: { _controller: bonPenseigneBundle:Enseigne:mobileAfficherAllEnseigne }
+mobile_del_enseigne:
+     path:     /mobile/delenseigne/{id}
+     defaults: { _controller: bonPenseigneBundle:Enseigne:mobileSupprimerenseigne }
+mobile_del_event:
+     path:     /mobile/delevent/{id}
+     defaults: { _controller: bonPenseigneBundle:Event:mobileSupprimerevent }
+mobile_del_menu:
+     path:     /mobile/delmenu/{id}
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileSupprimermenu }
+mobile_add_menu:
+     path:     /mobile/addmenu/{contenu}/{idenseigne}/{prix}
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileAddMenu }
+mobile_edit_menu:
+     path:     /mobile/editmenu/{id}/{contenu}/{idenseigne}/{prix}
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileEditMenu }
+mobile_add_event:
+     path:     /mobile/addevent/{desc}/{idenseigne}/{nom}
+     defaults: { _controller: bonPenseigneBundle:Event:mobileAddEvent}
+mobile_edit_event:
+     path:     /mobile/editevent/{id}/{desc}/{idenseigne}/{data}/{nom}
+     defaults: { _controller: bonPenseigneBundle:Menu:mobileEditMenu }

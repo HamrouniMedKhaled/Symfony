@@ -1,0 +1,157 @@
+{% extends 'default/layout.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="stylesheet" href="{{ asset('front/css/date-time-piker/bootstrap-datetimepicker.css') }}">
+{% endblock %}
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+
+
+
+    <!--Barre gauche-->
+
+    <!--Barre gauche-->
+    <center>
+        {{ form_start(form) }}
+        <table>
+            <tr>
+                <td>
+                    Nom :
+                </td>
+                <td>
+                    {{ form_widget(form.nom) }}
+                    <div class="clearfix"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Score :
+                </td>
+                <td>
+                    {{ form_widget(form.score) }}
+                    <div class="clearfix"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Prix :
+                </td>
+                <td>
+                    {{ form_widget(form.prix) }}
+                    <div class="clearfix"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Taux de réduction :
+                </td>
+                <td>
+                    {{ form_widget(form.tred) }}
+                    <div class="clearfix"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date debut
+                </td>
+                <td>
+                    <div class='col-md-4'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker6'>
+                                <input name="date_bebut" type='text' id="input2" class="form-control-ms" />
+                                <span class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date fin
+                </td>
+                <td>
+                    <div class='col-md-4'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker7'>
+                                <input name="date_fin" type='text' id="input2" class="form-control-ms" />
+                                <span class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    déscription :
+                </td>
+                <td>
+                    {{ form_widget(form.description) }}
+                    <div class="clearfix"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Image :
+                </td>
+                <td>
+                    {{ form_widget(form.image) }}
+                    <div class="clearfix"></div>
+                <td>
+            </tr>
+            <td>
+                <td>
+                    <center>
+                        {{ form_widget(form.enregistrer) }}
+                    </center>
+                </td>
+            </tr>
+        </table>
+        {{ form_end(form) }}
+    </center>
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('front/js/date-time-piker/jquery-2.2.4.min.js') }}" ></script>
+    <script src="{{ asset('front/js/date-time-piker/moment-with-locales.js') }}" ></script>
+
+    <script src="{{ asset('front/js/date-time-piker/bootstrap-datetimepicker.js') }}" ></script>
+    <script>
+        $('#datetimepicker6').datetimepicker({
+            minDate:  moment().format('L'),
+            viewMode: 'days',
+            format: 'YYYY/MM/DD',
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-arrow-up",
+                down: "fa fa-arrow-down"
+            }
+        });
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false, //Important! See issue #1075
+            minDate: moment().format('L'),
+            viewMode: 'days',
+            format: 'YYYY/MM/DD',
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-arrow-up",
+                down: "fa fa-arrow-down"
+            }
+        });
+
+
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    </script>
+
+{% endblock %}

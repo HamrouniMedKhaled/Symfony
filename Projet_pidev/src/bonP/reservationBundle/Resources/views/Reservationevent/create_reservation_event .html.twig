@@ -1,0 +1,29 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+{% block content %}
+{% block title %} {% endblock %}
+
+<center>
+    <h1>reservation event</h1>
+    <br> <br> <br> <br>
+    <fieldset style="width: 50%;">
+        <table>
+            {{ form_start(form) }}
+            <tr>
+                <td>nombre de place </td>
+                <td>{{ form_widget(form.nombrplaces) }}</td>
+            </tr>
+            <br>
+            <tr>
+                <br>
+                <td>{{ form_widget(form.save) }}</td>
+            </tr>
+        </table>
+        <br> <br> <br> <br>
+        {{ form_end(form) }}
+    </fieldset>
+</center>
+{% endblock %}
+

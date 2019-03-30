@@ -1,0 +1,119 @@
+<?php
+
+namespace bonP\planBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\OneToOne;
+
+/**
+ * Genreplan
+ *
+ * @ORM\Table(name="local")
+ * @ORM\Entity(repositoryClass="bonP\planBundle\Repository\LocalRepository")
+ */
+class Local
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lat", type="float")
+     */
+    private $lat;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lng", type="float")
+     */
+    private $lng;
+
+
+    /**
+     * @OneToOne(targetEntity="Plan", inversedBy="Local")
+     * @JoinColumn(name="plan_id", referencedColumnName="id")
+     */
+    private $plan;
+
+
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+
+    /**
+     * @return string
+     */
+    public function getLat()
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param string $lat
+     */
+    public function setLat($lat)
+    {
+        $this->lat = $lat;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLng()
+    {
+        return $this->lng;
+    }
+
+    /**
+     * @param string $lng
+     */
+    public function setLng($lng)
+    {
+        $this->lng = $lng;
+    }
+
+
+
+    /**
+     * Set plan
+     *
+     * @param \bonP\planBundle\Entity\Plan $plan
+     *
+     * @return Local
+     */
+    public function setPlan(\bonP\planBundle\Entity\Plan $plan = null)
+    {
+        $this->plan = $plan;
+
+        return $this;
+    }
+
+    /**
+     * Get plan
+     *
+     * @return \bonP\planBundle\Entity\Plan
+     */
+    public function getPlan()
+    {
+        return $this->plan;
+    }
+}

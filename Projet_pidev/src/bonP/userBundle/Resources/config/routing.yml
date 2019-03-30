@@ -1,0 +1,3 @@
+bon_puser_homepage:
+    path:     /
+    defaults: { _controller: bonPuserBundle:Default:index }

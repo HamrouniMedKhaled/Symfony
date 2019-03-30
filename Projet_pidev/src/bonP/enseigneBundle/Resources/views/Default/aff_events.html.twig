@@ -1,0 +1,42 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <table border="1" align="center">
+        <tr>
+
+            <td>Nom</td>
+            <td>Description</td>
+            <td>Date</td>
+            <td>Image</td>
+
+        </tr>
+
+        {% for event in events %} }
+            <tr>
+                <td>{{ event.nom }}</td>
+                <td>{{ event.description }}</td>
+                <td>{{ event.date |date}}</td>
+                <td><img src="{{ asset(event.image.webPath) }}"></td>
+                <td><a href="{{ path('supprimer_event',{'id':event.id}) }}">Supprimer</a></td>
+                <td><a href="{{ path('_create_reservation_event',{'id':event.id}) }}">Reserver</a></td>
+            </tr>
+        {% endfor %}
+
+
+
+    </table>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+bon_preservation_homepage:
+    path:     /
+    defaults: { _controller: bonPreservationBundle:Default:index }
+
+_create:
+    path:     /Create/{id}
+    defaults: { _controller: bonPreservationBundle:Reservation:Create }
+
+_createm:
+    path:     /Createm/
+    defaults: { _controller: bonPreservationBundle:Reservation:Createm }
+
+_update:
+    path:     /Update/{id}
+    defaults: { _controller: bonPreservationBundle:Reservation:Update }
+_updatem:
+    path:     /Updatem/
+    defaults: { _controller: bonPreservationBundle:Reservation:Updatem }
+
+_delete:
+    path:     /Delete/{id}
+    defaults: { _controller: bonPreservationBundle:Reservation:Delete }
+
+_deletem:
+    path:     /Deletem/
+    defaults: { _controller: bonPreservationBundle:Reservation:Deletem }
+
+_affiche:
+    path:     /Affiche
+    defaults: { _controller: bonPreservationBundle:Reservation:Affiche }
+
+_affichem:
+    path:     /Affichem
+    defaults: { _controller: bonPreservationBundle:Reservation:Affichem }
+
+_create_reservation_event:
+    path:     /CreateReservationEvent/{id}
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:CreateReservationEvent  }
+
+_create_reservation_eventm:
+    path:     /CreateReservationEvent/
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:CreateReservationEventm  }
+
+_delete_reservation_event:
+    path:     /DeleteReservationEvent/{id}
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:DeleteReservationEvent  }
+
+_delete_reservation_eventm:
+    path:     /DeleteReservationEvent/
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:DeleteReservationEventm  }
+
+_update_reservation_event:
+    path:     /UpdateReservationEvent/{id}
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:UpdateReservationEvent  }
+
+_update_reservation_eventm:
+    path:     /UpdateReservationEventm/
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:UpdateReservationEventm  }
+
+_affiche_reservation_event:
+    path:     /AfficheReservationEvent 
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:AfficheReservationEvent }
+
+_affiche_reservation_eventm:
+    path:     /AfficheReservationEventm
+    defaults: { _controller: bonPreservationBundle:ReservationEvent:AfficheReservationEventm }
+
+_affiche_reservation_event_admin:
+    path:     /Admin/reservationEvent
+    defaults: { _controller: bonPreservationBundle:ReservationAdminEvent:AfficheReservationEvent }
+
+
+_affiche_reservation_enseigne_admin:
+        path:     /Admin/reservationenseigne
+        defaults: { _controller: bonPreservationBundle:ReservationAdminEnseigne:AfficheReservationEnseigne }
+Recherche_Enseigne:
+        path:     /Admin/rechercheenseigne
+        defaults: { _controller: bonPreservationBundle:ReservationAdminEnseigne:RechercheReservationEnseigne }
+Recherche_Evenement:
+        path:     /Admin/rechercheevenement
+        defaults: { _controller: bonPreservationBundle:ReservationAdminEvent:RechercheReservationEvenement }
+pdf:
+    path:     /pdf/{id}
+    defaults: { _controller: bonPreservationBundle:Reservation:pdf }
+

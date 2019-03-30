@@ -1,0 +1,9 @@
+{# templates/emails/registration.html.twig #}
+<h3>Avertissement</h3>
+
+Salut {{ plan.user.username }} !!
+
+
+Votre plan {{ plan.titre }} a été signalé {{ plan.reportnumber }} fois . Après avoir inspecté votre plan , nous avons du le supprimer.
+vous avez {% if plan.user.report ==1 %} un avertissement {% else %} {{plan.user.report }} avertissements {% endif %}
+Merci pour votre attention .

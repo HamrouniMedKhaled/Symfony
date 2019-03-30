@@ -1,0 +1,38 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <center>
+
+
+        <table id="t" class="table table-responsive table-striped"  style="margin-bottom: 150px">
+            <thead class="thead-dark">
+                <th>nom de l'evenement</th>
+                <th>nbre de place </th>
+                <th>nom enseigne</th>
+                <th>Date Event</th>
+
+                 <th>action</th></thead>
+
+            {% for reservationEvenement in reservationEvenements %}
+
+                <tr>
+                    <td>{{ reservationEvenement.evenement.nom }}</td>
+                    <td>{{ reservationEvenement.nombrplaces }}</td>
+                    <td>{{ reservationEvenement.evenement.enseigne.nom }}</td>
+                    <td>{{ reservationEvenement.evenement.date|date }}</td>
+
+                    <td>
+                        <a href="{{ path('_delete_reservation_event',{'id':reservationEvenement.id}) }}" >Supprimer</a>
+                        <a href="{{ path('_update_reservation_event',{'id':reservationEvenement.id}) }}">Modifier</a>
+                    </td>
+
+
+                </tr>
+                {% endfor %}
+</table>
+
+    </center>
+{% endblock %}

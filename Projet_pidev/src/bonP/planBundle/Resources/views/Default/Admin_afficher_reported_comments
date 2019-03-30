@@ -1,0 +1,43 @@
+{% extends 'default/AdminLayout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block content %}
+<div id="page-wrapper">
+    <div class="main-page">
+        <h3 class="title1">Commentaires signales</h3>
+        <center>
+            <div class="panel-body widget-shadow">
+                <br>
+                <br>
+                <h4>Commentaires signales</h4>
+                <br>
+                <br>
+                <table class="table">
+                    <thead>
+                    <tr>
+        <td> commentaire du plan </td>
+        <td>  nombre de signalisations </td>
+        <td> ajouté par :</td>
+        <td> contenu     </td>
+
+    </tr>
+                    </thead>
+                    <tbody>
+    {% for commentaire in commentaires %}
+<tr>
+     <td><a href{{ path('plan_admin_affichage',{"id":commentaire.plan.id}) }}>{{ commentaire.plan.titre }}</a> </td>   <td>{{ commentaire.reportnumber }}</td>  <td>{{ commentaire.user.username }}</td> <td>{{ commentaire.contenu }}</td> <td><a href="{{ path('admin_supprimer_commentaire',{"id":commentaire.id}) }}">Supprimer commentaire</a></td>
+
+    {% endfor %}
+
+</tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+    </div>
+
+{% endblock %}

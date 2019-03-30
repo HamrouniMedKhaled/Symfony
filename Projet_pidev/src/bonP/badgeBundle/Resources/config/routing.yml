@@ -1,0 +1,36 @@
+new_comment:
+    path:     /comment/new{id}
+    defaults: { _controller: bonPbadgeBundle:Comment:new }
+
+get_comment_mobile:
+    path:     /comment/getAll
+    defaults: { _controller: bonPbadgeBundle:Comment:getAllComments }
+
+get_badges_mobile:
+    path:     /comment/userBadges
+    defaults: { _controller: bonPbadgeBundle:Comment:getBadgesForUserMobile}
+get_all_badges_mobile:
+    path:     /comment/allBadges
+    defaults: { _controller: bonPbadgeBundle:Comment:getAllBadgesMobile}
+
+new_comment_mobile:
+    path:     /comment/commentMobile
+    defaults: { _controller: bonPbadgeBundle:Comment:commentMobile}
+
+delete_comment:
+    path:     /comment/delete{id}
+    defaults: { _controller: bonPbadgeBundle:Comment:delete }
+delete_comment_mobile:
+    path:     /comment/delete
+    defaults: { _controller: bonPbadgeBundle:Comment:deleteMobile }
+admin_delete_badge:
+    path:     /badgeDelete{id}
+    defaults: { _controller: bonPbadgeBundle:AdminBadge:deleteBadge}
+admin_afficher_badge:
+    path:     /badgeAffiche
+    defaults: { _controller: bonPbadgeBundle:AdminBadge:afficherBadge }
+admin_ajouter_badge:
+    path:     /badgeAjout
+    defaults: { _controller: bonPbadgeBundle:AdminBadge:ajoutBadge}
+
+

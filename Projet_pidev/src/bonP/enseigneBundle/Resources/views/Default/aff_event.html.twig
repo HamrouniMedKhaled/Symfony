@@ -1,0 +1,43 @@
+
+
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <table border="1" align="center">
+        <tr>
+
+            <td>Nom</td>
+            <td>Description</td>
+            <td>Date</td>
+            <td>Image</td>
+
+        </tr>
+
+
+        <tr>
+            <td>{{ events.nom }}</td>
+            <td>{{ events.description }}</td>
+            <td>{{ events.date |date}}</td>
+            <td><img src="{{ asset(events.image.webPath) }}"></td>
+            <td><a href="{{ path('supprimer_event',{'id':events.id}) }}">Supprimer</a></td>
+        </tr>
+
+
+
+
+    </table>
+
+{% endblock %}

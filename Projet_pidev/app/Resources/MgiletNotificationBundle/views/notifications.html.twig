@@ -1,0 +1,94 @@
+{% extends 'default/layout.html.twig' %}
+{% block title %}
+    {{ parent() }} Plan
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="products-agileinfo">
+            <h2 class="tittle">Liste de Vos Notifications </h2>
+
+            <div class="container">
+
+
+                <div class="product-agileinfo-grids w3l">
+
+                    <!--Barre gauche-->
+                   
+                    <!--Barre gauche-->
+
+                    <!--Contenu-->
+                    <div class="col-md-9 product-agileinfon-grid1">
+
+                        <!--Image haut de page-->
+                        <div class="product-agileinfon-top">
+                            <div class="col-md-6 product-agileinfon-top-left">
+                                <img class="img-responsive " src="images/img3.jpg" alt="">
+                            </div>
+                            <div class="col-md-6 product-agileinfon-top-left">
+                                <img class="img-responsive " src="images/img4.jpg" alt="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--Image haut de page-->
+
+                        <!--Menu ToolBar-->
+                        <div class="mens-toolbar">
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--Menu ToolBar-->
+
+
+                        <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                            <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
+
+                                <!-- type affichage -->
+
+                                <!-- type affichage-->
+
+                                <!-- container Product tab-->
+                                <div id="myTabContent" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home"
+                                         aria-labelledby="home-tab">
+
+                                        <!-- Product tabs-->
+                                        Notifications :<br>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Messages</th>
+                                            </tr>
+                                            </thead>
+                                        {% for notification in notifications %}
+                                            <tr>
+                                                <td>{{ notification.date|date }} </td>
+                                                <td>{{ notification.message }}</td>
+                                            <tr>
+                                        {% endfor %}
+                                        </table>
+
+                                        <!-- Product tabs-->
+                                    </div>
+
+
+                                </div>
+                            </ul> <!-- container Product tab-->
+                        </div>
+
+                    </div>
+                    <!--Contenu-->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

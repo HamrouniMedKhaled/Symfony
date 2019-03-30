@@ -1,0 +1,67 @@
+{% extends '@bonPdeal/Deal/Affichage_Deal.html.twig' %}
+
+{% block commentaires %}
+
+
+    {#<body>#}
+    {#<div class="container">#}
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Commentaires :</h3>
+            </div><!-- /col-sm-12 -->
+        </div><!-- /row -->
+        <div class="row">
+            {% for comment in comments %}
+            <div class=" col-sm-12">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                    </div><!-- /thumbnail -->
+                </div><!-- /col-sm-1 -->
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <strong>{{ comment.user.username}}</strong> <span class="text-muted">commented 5 days ago</span>
+
+                        </div>
+
+                        <div class="panel-body">
+                            {{ comment.content }}
+                        </div>
+                        <div class="panel-heading">
+                            <span class="text-muted">Tags :</span><strong>{{ comment.tags| join(', ')  }}</strong>
+
+                        </div>
+                        <div>
+                            <strong><a href="{{ path('delete_comment', {'id':comment.id}) }}">Supprimer</a></strong>
+
+                        </div><!-- /panel-body -->
+                    </div><!-- /panel panel-default -->
+                </div><!-- /col-sm-5 -->
+            </div>
+            {% endfor %}
+            <div class=" col-sm-12">
+
+                <h1>Ajouter Commentaire</h1>
+                {{ form_start(form) }}
+
+                {{ form_widget(form) }}
+                <button type="submit" class="btn btn-primary">Commenter</button>
+                {{ form_end(form) }}
+            </div>
+        </div><!-- /row -->
+        <div class="col-md-4">
+            <h2>Mes Badges </h2>
+
+            <ul class="list-group">
+                {% for badge in badges %}
+                    <li class="list-group-item">{{ badge.name }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    {#</div><!-- /container -->#}
+
+    {#</body>#}
+
+{% endblock %}

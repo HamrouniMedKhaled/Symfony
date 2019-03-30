@@ -1,0 +1,168 @@
+<?php
+
+namespace bonP\enseigneBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
+
+/**
+ * Evenement
+ *
+ * @ORM\Table(name="evenement")
+ * @ORM\Entity(repositoryClass="bonP\enseigneBundle\Repository\EvenementRepository")
+ */
+class Evenement
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text")
+     */
+    private $description;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="date")
+     */
+    private $date;
+
+    /**
+     * @ORM\OneToOne(targetEntity="bonP\planBundle\Entity\Image",cascade={"persist","remove"})
+     */
+    private $image;
+
+
+
+    /**
+     * @ManyToOne(targetEntity="Enseigne", inversedBy="evenements")
+     * @JoinColumn(name="enseigne_id", referencedColumnName="id")
+     */
+    private $enseigne;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Evenement
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Evenement
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+
+
+    /**
+     * Set image
+     *
+     * @param \bonP\planBundle\Entity\Image $image
+     *
+     * @return Evenement
+     */
+    public function setImage(\bonP\planBundle\Entity\Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \bonP\planBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set enseigne
+     *
+     * @param \bonP\enseigneBundle\Entity\Enseigne $enseigne
+     *
+     * @return Evenement
+     */
+    public function setEnseigne(\bonP\enseigneBundle\Entity\Enseigne $enseigne = null)
+    {
+        $this->enseigne = $enseigne;
+
+        return $this;
+    }
+
+    /**
+     * Get enseigne
+     *
+     * @return \bonP\enseigneBundle\Entity\Enseigne
+     */
+    public function getEnseigne()
+    {
+        return $this->enseigne;
+    }
+}

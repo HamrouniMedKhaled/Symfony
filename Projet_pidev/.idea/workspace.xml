@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed563531-69cb-4f1b-b640-d113a3c20ab3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig" afterPath="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig" afterPath="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig" />
+
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Admin_afficher_reported_comments" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Admin_afficher_reported_plans" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Adminactiveplans" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Admininactiveplans" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Mailer_plan_deleted" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Plan_affichage_plan" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affiche_plan_par_categorie" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Adminaffichage_plans" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Adminaffichage_plans" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/AjoutPlan.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/AjoutPlan.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_mesplans.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_mesplans.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plan.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plan.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plans.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plans.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/modif_plan.html.twig" afterPath="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/modif_plan.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/layout.html.twig" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DealController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/DealController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-101">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+
+
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/userBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+      <file leaf-file-name="Notification.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Entity/Notification.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="Plan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Entity/Plan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="AdminDealController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/AdminDealController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="57" />
+
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="Commentaire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Entity/Commentaire.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+
+      <file leaf-file-name="DealController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/DealController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-329">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="CategorieForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Form/CategorieForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="30" />
+
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="CategorieRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Repository/CategorieRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPlanController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/AdminPlanController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="202" column="1" lean-forward="false" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
+              <folding>
+                <element signature="e#1090#1107#1#PHP" expanded="true" />
+                <element signature="e#1360#1377#1#PHP" expanded="true" />
+                <element signature="e#1690#1707#1#PHP" expanded="true" />
+                <element signature="e#2590#2607#1#PHP" expanded="true" />
+                <element signature="e#3186#3210#1#PHP" expanded="true" />
+                <element signature="e#3737#3754#1#PHP" expanded="true" />
+                <element signature="e#4036#4060#1#PHP" expanded="true" />
+                <element signature="e#4450#4467#1#PHP" expanded="true" />
+                <element signature="e#5215#5239#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+      <file leaf-file-name="DealType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Form/DealType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="47" />
+
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Affichage_Deal.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="98" column="80" lean-forward="false" selection-start-line="98" selection-start-column="80" selection-end-line="98" selection-end-column="110" />
+
+
+      <file leaf-file-name="PlanController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/PlanController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+              <folding>
+                <element signature="e#1103#1130#0#PHP" expanded="true" />
+                <element signature="e#1308#1325#1#PHP" expanded="true" />
+                <element signature="e#1377#1410#0#PHP" expanded="true" />
+                <element signature="e#1639#1656#1#PHP" expanded="true" />
+                <element signature="e#2904#2921#1#PHP" expanded="true" />
+                <element signature="e#2986#3022#0#PHP" expanded="true" />
+                <element signature="e#3283#3300#1#PHP" expanded="true" />
+                <element signature="e#3828#3845#1#PHP" expanded="true" />
+                <element signature="e#4410#4438#0#PHP" expanded="true" />
+                <element signature="e#4717#4734#1#PHP" expanded="true" />
+                <element signature="e#4777#4813#0#PHP" expanded="true" />
+                <element signature="e#5080#5104#1#PHP" expanded="true" />
+                <element signature="e#5804#5821#1#PHP" expanded="true" />
+                <element signature="e#6441#6465#1#PHP" expanded="true" />
+                <element signature="e#6889#6911#1#PHP" expanded="true" />
+                <element signature="e#6961#6978#1#PHP" expanded="true" />
+              </folding>
+
+      <file leaf-file-name="ReservationDealController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1">
+              <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+              <folding />
+
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Afficher_Deal.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#65519#65525#0#HTML" expanded="true" />
+=======
+
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/index.html.twig">
+
+      <file leaf-file-name="ReservationdealRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/ReservationdealRepository.php">
+
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-867">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+
+      <file leaf-file-name="DealRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/DealRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1519301307788" expanded="true" signature="332:407" ph="Select d fro... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="547:635" ph="SELECT d FRO... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="547:642" ph="SELECT d FRO... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="547:665" ph="SELECT d FRO... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="547:699" ph="SELECT d FRO... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="1067:1199" ph="SELECT d FRO... bonPdealBundle" />
+                <marker date="1519301307788" expanded="true" signature="1375:1501" ph="SELECT d FRO... bonPdealBundle" />
+              </folding>
+
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>valida</find>
+      <find>show</find>
+      <find>shor</find>
+      <find>mail</find>
+      <find>compo</find>
+      <find>collapse</find>
+      <find>nav</find>
+      <find>Product description</find>
+      <find>body</find>
+      <find>deal</find>
+      <find>si1</find>
+      <find>plan</find>
+      <find>plans</find>
+      <find>descript</find>
+      <find>Quali</find>
+      <find>add</find>
+      <find>Score</find>
+      <find>deal Descr</find>
+      <find>deal.nom</find>
+      <find>top-r</find>
+      <find>Product</find>
+      <find>Pro</find>
+      <find>deal.iù</find>
+      <find>tabpa</find>
+      <find>Prese</find>
+      <find>Fro</find>
+    </findStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:generate:entities bonPreservationBundle:Reservation" />
+      <command text="s doctrine:generate:entities planBundle:Plan" />
+      <command text="s server:start " />
+      <command text="s server:stop" />
+      <command text="s doctrine:generate:entities bonPuserBundle:Adresse" />
+      <command text="s doctrine:generate:entities bonPenseigneBundle:ENseigne" />
+      <command text="s doctrine:generate:entities bonPenseigneBundle:Enseigne" />
+      <command text="s doctrine:generate:form bonPuserBundle:Adresse" />
+      <command text="s doctrine:generate:form bonPenseigneBundle:Menu" />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:generate:entities bonP" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:entities bonPDeal:Deal" />
+      <command text="s doctrine:generate:entities bonPdealBundle:Deal" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:entities bonPdealBundle:Reservationdeal" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:entities bonPdealBundle:Reservationdeal" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:entities bonPdealBundle:Reservationdeal" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="composer require mgilet/notification-bundle" />
+      <command text="s doctrine:generate:entities bonP" />
+      <command text="c clear-cache" />
+      <command text="s cache:clear" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities bonP" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c install " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s server:start " />
+      <command text="yes" />
+      <command text="s fos:user:create aaa aaa aaa" />
+      <command text="s fos:user:create bbb bbb bbb" />
+      <command text="s fos:user:promote bbb role=ADMIN" />
+      <command text="s doctrine:generate:entities bonP" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s cache:clear --f" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/Image.php" />
+
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/AjoutPlan.html.twig" />
+
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Repository/ImageRepository.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/PlanEditImageForm.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/Modif_plan_image" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/CategorieForm.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/PlanEditForm.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Adminaffichage_plans" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_mesplans.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plan.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plans.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/PlanForm.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Entity/Evenement.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Resources/views/Ajouter_enseigne" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Form/EvenementType.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/EventController.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/EnseigneController.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Resources/views/Afficher_enseigne" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/src/bonP/reservationBundle/Entity/Reservation.php" />
+        <option value="$PROJECT_DIR$/src/bonP/userBundle/Entity/Adresse.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Entity/Enseigne.php" />
+        <option value="$PROJECT_DIR$/src/bonP/userBundle/Form/AdresseType.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Form/EnseigneType.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Form/MenuType.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Form/DealType.php" />
+        <option value="$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/MenuController.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Ajouter_Deal.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Form/ImageType.php" />
+
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Controller/AdminDealController.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Entity/Deal.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Repository/DealRepository.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Entity/Reservationdeal.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Entity/Notification.php" />
+        <option value="$PROJECT_DIR$/src/bonP/userBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Entity/Notification.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+
+        <option value="$PROJECT_DIR$/app/Resources/views/default/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/userBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Entity/Notification.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig" />
+        <option value="$PROJECT_DIR$/web/front/products.html" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Entity/Plan.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Entity/Commentaire.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Controller/AdminPlanController.php" />
+        <option value="$PROJECT_DIR$/src/bonP/planBundle/Controller/PlanController.php" />
+
+        <option value="$PROJECT_DIR$/app/Resources/views/default/layoutPlans.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/layout.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/mgilet/notification-bundle/Twig/NotificationExtension.php" />
+        <option value="$PROJECT_DIR$/src/bonP/dealBundle/Controller/DealController.php" />
+
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/mgilet/notification-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1380" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+
+      <pane id="Scratches" />
+
+      <pane id="Scope" />
+
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dealBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dealBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dealBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dealBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Deal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="planBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="planBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Projet_pidev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_pidev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bonP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="planBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Projet_pidev" type="cbb8eebc:String" user="Projet_pidev" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Projet_pidev" type="cbb8eebc:String" user="Projet_pidev" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Projet_pidev" type="cbb8eebc:String" user="Projet_pidev" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Projet_pidev" type="cbb8eebc:String" user="Projet_pidev" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Projet_pidev" type="cbb8eebc:String" user="Projet_pidev" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+              <item name="default" type="cbb8eebc:String" user="default" />
+
+              <item name="dealBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Projet_pidev" />
+    <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow" />
+
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projet_pidev" />
+    <property name="SearchEverywhereHistoryKey" value="termi&#9;ACTION&#9;ActivateTerminalToolWindow" />
+
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BonPlan\Projet_pidev\src\bonP\planBundle" />
+      <recent name="C:\xampp\htdocs\BonPlan\Projet_pidev\src\bonP\planBundle\Repository" />
+      <recent name="C:\xampp\htdocs\BonPlan\Projet_pidev\src\bonP\planBundle\Form" />
+      <recent name="C:\xampp\htdocs\BonPlan\Projet_pidev\src\bonP\planBundle\Entity" />
+
+      <recent name="C:\wamp64\www\BonPlan\Projet_pidev\app\Resources\MgiletNotificationBundle" />
+      <recent name="C:\wamp64\www\BonPlan\Projet_pidev\app\Resources" />
+      <recent name="C:\wamp64\www\BonPlan\Projet_pidev\src\bonP\dealBundle\Entity" />
+      <recent name="C:\wamp64\www\BonPlan\Projet_pidev\vendor\mgilet" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/bonP/planBundle/Repository" />
+      <recent name="$PROJECT_DIR$/src/bonP/userBundle" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1519319586804" text="FrontEnd" recursive="true" caseInsensitive="true" type="PHP" history="1" />
+    <searchConfiguration name="user defined" created="1519319510616" text="Front" recursive="true" caseInsensitive="true" type="PHP" history="1" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed563531-69cb-4f1b-b640-d113a3c20ab3" name="Default" comment="" />
+      <created>1518132372081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518132372081</updated>
+      <workItem from="1518132373475" duration="123000" />
+      <workItem from="1518132746979" duration="16105000" />
+      <workItem from="1518280143822" duration="2207000" />
+      <workItem from="1518297761894" duration="82000" />
+      <workItem from="1518297896361" duration="36000" />
+      <workItem from="1518351417817" duration="4308000" />
+      <workItem from="1518364771304" duration="4421000" />
+      <workItem from="1518594818203" duration="16895000" />
+      <workItem from="1518636410305" duration="35000" />
+      <workItem from="1518641298266" duration="5128000" />
+      <workItem from="1518654274608" duration="16333000" />
+      <workItem from="1518712313038" duration="6128000" />
+      <workItem from="1518733768835" duration="12468000" />
+      <workItem from="1518749168409" duration="3899000" />
+      <workItem from="1518868328010" duration="23809000" />
+      <workItem from="1518948677328" duration="11917000" />
+      <workItem from="1518984264975" duration="2750000" />
+      <workItem from="1519032624916" duration="7325000" />
+      <workItem from="1519043863692" duration="8533000" />
+      <workItem from="1519056393171" duration="2710000" />
+      <workItem from="1519070430473" duration="5636000" />
+      <workItem from="1519088923077" duration="639000" />
+      <workItem from="1519091378277" duration="647000" />
+      <workItem from="1519114895994" duration="12148000" />
+      <workItem from="1519173872300" duration="17422000" />
+      <workItem from="1519255147747" duration="907000" />
+      <workItem from="1519256232477" duration="31849000" />
+      <workItem from="1519308294800" duration="2851000" />
+
+      <workItem from="1519554450107" duration="8377000" />
+
+      <workItem from="1519554129390" duration="1672000" />
+      <workItem from="1519556997549" duration="1367000" />
+
+      <workItem from="1519256232477" duration="29561000" />
+      <workItem from="1519316755085" duration="2489000" />
+      <workItem from="1519319327570" duration="7453000" />
+
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="225802000" />
+    <option name="totallyTimeSpent" value="220464000" />
+
+    <option name="totallyTimeSpent" value="222114000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="125" width="1166" height="543" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312203" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Form/EnseigneType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Form/EvenementType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Form/MenuType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/EnseigneController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Entity/Evenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Controller/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Form/DealType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="47" />
+          <folding />
+
+
+        </state>
+      </provider>
+    </entry>
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Form/ImageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/views/AjoutPlan.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Ajouter_Deal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Repository/PlanRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/userBundle/Entity/Adresse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/views/affichage_plan.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/validationBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/validationBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Entity/Reservationdeal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/DefaultController.php" />
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/DealRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1519301307788" expanded="true" signature="332:407" ph="Select d fro... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:635" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:642" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:665" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:699" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="1067:1199" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="1375:1501" ph="SELECT d FRO... bonPdealBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/AdminDealController.php">
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="30" />
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/enseigneBundle/Entity/Enseigne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/AdminDealController.php">
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Entity/Reservationdeal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Entity/Notification.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Annotation/Notifiable.php" />
+    <entry file="file://$PROJECT_DIR$/src/bonP/userBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#75#117#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Entity/Deal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+
+        <state relative-caret-position="0">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="60" selection-end-column="24" />
+          <folding />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#36#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/NotificationRepository.php">
+        <state relative-caret-position="237">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Twig/NotificationExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Model/UserNotificationInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Controller/NotificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Entity/Notification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="93" column="54" lean-forward="false" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Controller/NotificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-509">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/DealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+
+        <state relative-caret-position="504">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="26" />
+
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/ReservationdealRepository.php">
+
+    <entry file="file://$PROJECT_DIR$/app/Resources/MgiletNotificationBundle/views/notifications.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/DealRepository.php">
+
+    <entry file="file://$PROJECT_DIR$/app/Resources/MgiletNotificationBundle/views/notification_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/layoutPlans.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+
+        <state relative-caret-position="33">
+          <caret line="29" column="91" lean-forward="false" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Entity/Plan.php">
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1166">
+          <caret line="360" column="20" lean-forward="false" selection-start-line="360" selection-start-column="20" selection-end-line="360" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Entity/Commentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Form/CategorieForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/MgiletNotificationBundle/views/notification_dropdown.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Twig/NotificationExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="106" column="87" lean-forward="false" selection-start-line="106" selection-start-column="87" selection-end-line="106" selection-end-column="87" />
+          <folding>
+            <element signature="e#75#115#0#PHP" expanded="false" />
+            <element signature="e#2634#2689#0#PHP" expanded="true" />
+            <element signature="e#3348#3401#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+        <state relative-caret-position="101">
+          <caret line="109" column="52" lean-forward="false" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Repository/CategorieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+
+    <entry file="file://$PROJECT_DIR$/vendor/mgilet/notification-bundle/Resources/views/notification_dropdown.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/AdminPlanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="202" column="1" lean-forward="false" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
+          <folding>
+            <element signature="e#1090#1107#1#PHP" expanded="true" />
+            <element signature="e#1360#1377#1#PHP" expanded="true" />
+            <element signature="e#1690#1707#1#PHP" expanded="true" />
+            <element signature="e#2590#2607#1#PHP" expanded="true" />
+            <element signature="e#3186#3210#1#PHP" expanded="true" />
+            <element signature="e#3737#3754#1#PHP" expanded="true" />
+            <element signature="e#4036#4060#1#PHP" expanded="true" />
+            <element signature="e#4450#4467#1#PHP" expanded="true" />
+            <element signature="e#5215#5239#1#PHP" expanded="true" />
+
+        <state relative-caret-position="187">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/AdminDealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/ReservationdealRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Form/DealType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        <state relative-caret-position="199">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Repository/DealRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1519301307788" expanded="true" signature="332:407" ph="Select d fro... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:635" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:642" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:665" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="547:699" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="1067:1199" ph="SELECT d FRO... bonPdealBundle" />
+            <marker date="1519301307788" expanded="true" signature="1375:1501" ph="SELECT d FRO... bonPdealBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/front/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="294" column="36" lean-forward="false" selection-start-line="294" selection-start-column="36" selection-end-line="297" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/front/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="944" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#41073#41079#0" expanded="true" />
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Controller/PlanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <folding>
+            <element signature="e#1103#1130#0#PHP" expanded="true" />
+            <element signature="e#1308#1325#1#PHP" expanded="true" />
+            <element signature="e#1377#1410#0#PHP" expanded="true" />
+            <element signature="e#1639#1656#1#PHP" expanded="true" />
+            <element signature="e#2904#2921#1#PHP" expanded="true" />
+            <element signature="e#2986#3022#0#PHP" expanded="true" />
+            <element signature="e#3283#3300#1#PHP" expanded="true" />
+            <element signature="e#3828#3845#1#PHP" expanded="true" />
+            <element signature="e#4410#4438#0#PHP" expanded="true" />
+            <element signature="e#4717#4734#1#PHP" expanded="true" />
+            <element signature="e#4777#4813#0#PHP" expanded="true" />
+            <element signature="e#5080#5104#1#PHP" expanded="true" />
+            <element signature="e#5804#5821#1#PHP" expanded="true" />
+            <element signature="e#6441#6465#1#PHP" expanded="true" />
+            <element signature="e#6889#6911#1#PHP" expanded="true" />
+            <element signature="e#6961#6978#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Affichage_Deal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="98" column="80" lean-forward="false" selection-start-line="98" selection-start-column="80" selection-end-line="98" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/DealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+
+    <entry file="file://$PROJECT_DIR$/src/bonP/planBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+
+        <state relative-caret-position="-329">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Controller/ReservationDealController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="e#416#437#1#PHP" expanded="true" />
+            <element signature="e#1262#1294#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bonP/dealBundle/Resources/views/Deal/Afficher_Deal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#65519#65525#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

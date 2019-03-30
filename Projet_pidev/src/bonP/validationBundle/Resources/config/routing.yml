@@ -1,0 +1,18 @@
+bon_pvalidation_homepage:
+    path:     /
+    defaults: { _controller: bonPvalidationBundle:Default:index }
+bon_pvalidation_mail:
+    path:     /mailUs
+    defaults: { _controller: bonPvalidationBundle:Default:mailUs }
+bon_pvalidation_login:
+    path:     /login1
+    defaults: { _controller: bonPvalidationBundle:Default:login }
+bon_pvalidation_registered:
+    path:     /registered
+    defaults: { _controller: bonPvalidationBundle:Default:registered }
+Show_Plan:
+    path:     /Plan
+    defaults: { _controller: bonPvalidationBundle:Default:showPlan }
+Admin_index:
+    path:     /Admin/
+    defaults: { _controller: bonPvalidationBundle:Admin:index }

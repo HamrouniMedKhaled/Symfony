@@ -1,0 +1,4 @@
+services:
+#    bon_pvalidation.example:
+#        class: bonP\validationBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,0 +1,49 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <h3>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</h3><br>
+    <h3>         <a href="{{ path('fos_user_security_logout') }}">
+            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+        </a></h3>
+{% else %}
+
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+    <h3>Inscription</h3>
+
+    <div class="key">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        {{ form_widget(form.email,{'attr': {'placeholder': 'E-mail','class':'form-control placeholder-no-fix','required' : 'true'}})  }}
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="key">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        {{ form_widget(form.username,{'attr': {'placeholder': 'Pseudo','class':'form-control placeholder-no-fix','required' : 'true'}})  }}
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="key">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        {{ form_widget(form.plainPassword.first,{'attr': {'placeholder': 'Password','class':'form-control placeholder-no-fix','required' : 'true'}}) }}
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="key">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        {{ form_widget(form.plainPassword.second,{'attr': {'placeholder': 'Password','class':'form-control placeholder-no-fix','required' : 'true'}}) }}
+        <div class="clearfix"></div>
+    </div>
+
+ <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+
+
+    {{ form_end(form) }}
+
+{% endif %}

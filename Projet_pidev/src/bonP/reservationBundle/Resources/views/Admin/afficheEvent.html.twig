@@ -1,0 +1,42 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+{% block content %}
+
+<div class="container">
+    <center>
+        <h1>La liste des evenements </h1>
+
+            <form name="form" action="{{ path('Recherche_Evenement') }}" method="post">
+            <div class="col-md-4">
+                <input type="text" name="nomE" placeholder="Filtre de non d'evenement" id="nomE" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="submit" name="rechercher" value="rechercher" id="rechercher" class="btn btn-primary btn-sm"/>
+            </div>
+            </form>
+        <br><br>
+        <table id="t" class="table table-responsive table-striped"  style="margin-bottom: 150px">
+            <thead class="thead-dark">
+                <th>nom de l'evenement</th>
+                <th>nbre de place </th>
+                <th>nom enseigne</th>
+                <th>Date Event</th>
+                <th>description</th> </thead>
+            {% for reservationEvenement in reservationEvenements %}
+
+                <tr>
+                    <td>{{ reservationEvenement.evenement.nom }}</td>
+                    <td>{{ reservationEvenement.nombrplaces }}</td>
+                    <td>{{ reservationEvenement.evenement.enseigne.nom }}</td>
+                    <td>{{ reservationEvenement.evenement.date|date }}</td>
+                    <td>{{ reservationEvenement.evenement.description }}</td>
+
+
+                </tr>
+            {% endfor %}
+        </table>
+
+    </center>
+{% endblock %}

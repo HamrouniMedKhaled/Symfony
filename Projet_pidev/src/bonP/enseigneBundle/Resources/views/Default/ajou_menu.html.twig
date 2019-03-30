@@ -1,0 +1,26 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h3>Ajout menus</h3>
+    {{ form_start(formss) }}
+
+    <div class="form-group" >{{ form_row(formss.contenu, {'attr': {'class': 'form-control'} }) }}</div>
+    <div class="form-group" >{{ form_row(formss.prix, {'attr': {'class': 'form-control'} }) }}</div>
+
+
+    {{ form_end(formss) }}
+
+{% endblock %}

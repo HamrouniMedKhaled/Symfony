@@ -1,0 +1,50 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }}  Authentification
+{% endblock %}
+
+{% block banner %}
+    <!--banner-->
+    <div class="banner1">
+        <div class="container">
+            <h3><a href="{{ path('bon_pvalidation_homepage') }}">Connexion</a> <span></span></h3>
+        </div>
+    </div>
+    <!--banner-->
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+        <!--login-->
+        <div class="login">
+            <div class="main-agileits">
+                <div class="form-w3agile">
+                    <h3>Connexion</h3>
+                    <form action="#" method="post">
+                        <div class="key">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input  type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input  type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                            <div class="clearfix"></div>
+                        </div>
+                        <input type="submit" value="Se connecter">
+                    </form>
+                </div>
+                <div class="forg">
+                    <a href="#" class="forg-left">Mot de Passe oublié</a>
+                    <a href="{{ path('bon_pvalidation_registered') }}" class="forg-right">Créer un compte</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--login-->
+    </div>
+    <!--content-->
+
+{% endblock %}

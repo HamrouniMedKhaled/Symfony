@@ -1,0 +1,39 @@
+{% extends 'default/layout.html.twig' %}
+
+{% block banner %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <table border="1" align="center">
+        <tr>
+
+            <td>Contenu</td>
+            <td>Prix</td>
+
+
+        </tr>
+
+        {% for menu in menus %}
+            <tr>
+                <td>{{ menu.contenu }}</td>
+                <td>{{ menu.prix }}</td>
+                <td><a href="{{ path('supprimer_menu',{'id':menu.id}) }}">supprimer</a></td>
+                <
+            </tr>
+        {% endfor %}
+
+
+
+    </table>
+
+{% endblock %}

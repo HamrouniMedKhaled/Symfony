@@ -1,0 +1,84 @@
+plan_ajout:
+    path:     /plan/mesplans/nouveauplan
+    defaults: { _controller: planBundle:Plan:ajout}
+
+plans_affichage:
+    path:     /plan
+    defaults: { _controller: planBundle:Plan:affiche}
+
+plan_affichage:
+    path:     /plan/{id}
+    defaults: { _controller: planBundle:Plan:showplan}
+
+mesplans_affichage:
+    path:     /plan/mesplans/
+    defaults: { _controller: planBundle:Plan:mesplans}
+
+plan_delete:
+    path:     /plan/mesplans/supprimer/plan{id}
+    defaults: { _controller: planBundle:Plan:deletePLan}
+
+plan_recherche_titre:
+    path:     /plan/recherche/titre
+    defaults: { _controller: planBundle:Plan:afficherpartitre}
+
+plan_update:
+    path:     /plan/mesplans/modifier/plan{id}
+    defaults: { _controller: planBundle:Plan:update}
+
+signelaer_plan:
+    path:     /plan/signaler/plan{id}
+    defaults: { _controller: planBundle:Plan:signalerPlan}
+
+genre_ajout:
+    path:     /admin/categories/ajouter
+    defaults: { _controller: planBundle:AdminPlan:ajoutgenre}
+
+supprimer_commentaire:
+    path:     /plan/supprimer{id}
+    defaults: { _controller: planBundle:Plan:deleteComment}
+
+signelaer_commentaire:
+    path:     /plan/signaler/commentaire{id}
+    defaults: { _controller: planBundle:Plan:signalerComment}
+
+admin_afficher_plans_actifs:
+    path:     /Admin/plan/actifs
+    defaults: { _controller: planBundle:AdminPlan:affiche}
+
+admin_afficher_plans_inactifs:
+    path:     /Admin/plan/inactifs
+    defaults: { _controller: planBundle:AdminPlan:afficheinnactifs}
+
+admin_afficher_plans_reported:
+    path:     /Admin/plan/reported
+    defaults: { _controller: planBundle:AdminPlan:afficherrepplans}
+
+admin_afficher_commentaires_reported:
+    path:     /Admin/plan/comments/reported
+    defaults: { _controller: planBundle:AdminPlan:afficherreportedcomments }
+
+plan_admin_affichage:
+    path:     /Admin/plan/plan/{id}
+    defaults: { _controller: planBundle:AdminPlan:showplan}
+
+activerdesactiverplan:
+    path:     /Admin/plan/activer-desactiver{id}
+    defaults: { _controller: planBundle:AdminPlan:ActiverDesactiver}
+
+admin_supprimer_commentaire:
+    path:     /Admin/supprimer/commentaire/{id}
+    defaults: { _controller: planBundle:AdminPlan:deleteComment}
+
+AfficherPlanparcategorie:
+    path:     /plan/categorie/{cat}/
+    defaults: { _controller: planBundle:Plan:afficherparcategorie}
+
+Admin_Deleteplan:
+    path:     /Admin/plan/{id}/supprimer
+    defaults: { _controller: planBundle:AdminPlan:deletePLan}
+
+Admin_reset_comment:
+    path:     /Admin/plan/commentaire/reset/{id}
+    defaults: { _controller: planBundle:AdminPlan:resetComment}
+

@@ -1,0 +1,57 @@
+{% extends 'default/AdminLayout.html.twig' %}
+
+{% block content %}
+<div id="page-wrapper">
+    <div class="main-page">    <link href="{{ asset('Back/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+
+    <table id="example" class="display" style="width:100%">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>image_id</th>
+        <th>nom</th>
+        <th>adresse_id</th>
+        <th>categorie_id</th>
+        <th>user_id</th>
+        <th>description</th>
+        <th>active</th>
+        <th>capacite</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for e in enseignes %}
+    <tr>
+        <td> {{ e.id }} </td>
+        <td><img src="{{ asset(e.image.webPath) }}" alt=""> </td>
+        <td> {{ e.nom }}  </td>
+        <td>{{ e.adresse.ville }}  </td>
+        <td> {{ e.categorie.nom }} </td>
+        <td>{{ e.user }}  </td>
+        <td> {{ e.description }} </td>
+        <td> {{ e.active }} </td>
+        <td> {{ e.capacite }} </td>
+
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+    </div>
+</div>
+
+    <script src="{{ asset('Back/js/jquery-1.12.4.js') }}"></script>
+
+    <script src="{{ asset('Back/js/jquery.dataTables.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+{% endblock content %}
+
+
+

@@ -1,0 +1,79 @@
+{% extends 'default/layout.html.twig' %}
+{% block title %}
+    {{ parent() }} Plan
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="products-agileinfo">
+            <h2 class="tittle">Deal reserver </h2>
+            <h2 class="tittle">avec succes </h2>
+
+            <div class="container">
+                <div class="product-agileinfo-grids w3l">
+                    <div class="col-md-3 product-agileinfo-grid">
+
+                        <div class="brand-w3l" style="margin-top:0px;">
+                            <h3>Catégories</h3>
+                            <ul>
+                                <li> <a href="{{ path('Afficher_Deals') }}">Tout les deals</a></li>
+                                {% if is_granted("ROLE_OWNER") %}
+
+                                    <li><a href="{{ path('Afficher_Mes_Deal') }}">Afficher mes deals</a></li>
+
+
+                                {% endif %}
+                                {% for categorie in categories  %}
+                                    <li><a href="{{ path('Recherche_Categorie_Deal',{"categorie": categorie.nom}) }}">{{ categorie.nom }}</a></li>
+                                {% endfor %}
+                                <li><a href="{{ path('Recherche_Score_Deal') }}">Afficher par score</a></li>
+
+
+
+
+                                <li><a href="{{ path('Afficher_Reserver') }}">Afficher mes reservations</a></li>
+                                <li>Recherche par ville</li>
+
+                                <form name="form" action="{{ path('Recherche_Ville_Deal') }}" method="post">
+                                    <input type="text" id="ville" name="ville"><br>
+                                    <input type="submit" value="Rechercher" href="" id="">
+                                </form>
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-9 product-agileinfon-grid1 w3l">
+
+                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                        <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
+
+                            <div id="myTabContent" class="tab-content">
+                                <!--affichage 1 -->
+
+
+
+                                <!-- affichage 2 -->
+
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
